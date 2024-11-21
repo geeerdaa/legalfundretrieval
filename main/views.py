@@ -31,6 +31,7 @@ def contacts(request):
     data = {
         'form': form,
         'error': error,
+        'title': 'Contant Us'
     }
     return render(request, 'main/about-us/contact-us/index.html', data)
 
@@ -50,6 +51,7 @@ def create(request):
     data = {
         'form': form,
         'error': error,
+        'title': 'Help'
     }
 
     return render(request, 'main/file-a-complaint/index.html', data)
