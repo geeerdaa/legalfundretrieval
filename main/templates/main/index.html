@@ -1,0 +1,428 @@
+﻿{% extends 'main/layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% load static %}
+  <main class="homepage">
+    <section class="banner banner-left" style="background-image: url('assets/uploads/background-new.webp')">
+      <div class="container py-md-5 d-flex flex-column position-relative">
+        <div class="row my-auto">
+          <div class="col-lg-6">
+            <h1 class="mb-2">FUNDS RETRIEVAL</h1>
+            <p>
+              Funds Retrieval is an investigative and consulting service hired
+              mainly by victims of online fraud to help them get their money
+              back. We specialize dealing with online scams and help provide
+              reimbursement to their victims using disputes, tracking down
+              digital fingerprints, cyber analysis and thorough investigative
+              work.
+            </p>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+        <div class="row my-3 mt-md-auto">
+          <div class="companies col-lg-9 d-flex justify-content-center justify-content-md-between align-items-center pr-md-5">
+            <a class="" rel="nofollow" href="https://www.trustpilot.com/review/funds-recovery.com" title="Trustpilot"><img width="131" height="33" class="attachment-block-banner-company_logo size-block-banner-company_logo beetle-lazy" alt="trustpilot-logo-white" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/trustpilot-logo-white.png' %}"></a>
+            <img width="84" height="28" class="attachment-block-banner-company_logo size-block-banner-company_logo beetle-lazy" alt="visa-logo-white" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/visa-logo-white.png' %}">
+            <img width="45" height="36" class="attachment-block-banner-company_logo size-block-banner-company_logo beetle-lazy" alt="mastercard-logo-white" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/mastercard-logo-white.png' %}">
+            <img width="131" height="43" class="attachment-block-banner-company_logo size-block-banner-company_logo beetle-lazy" alt="dmca-logo-white" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/dmca-logo-white.png' %}">
+            <img width="99" height="48" class="attachment-block-banner-company_logo size-block-banner-company_logo beetle-lazy" alt="gdpr-logo-white" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/gdpr-logo-white.png' %}">
+          </div>
+        </div>
+        <div class="row">
+          <div class="offset-lg-9 col-lg-3 button-block p-4 d-flex flex-column align-items-center">
+            <h2>
+              Scam victims <span>all around the world</span> have already
+              reclaimed their money back!
+            </h2>
+            <a class="btn btn-border btn-border-white" href="{% url 'create' %}" title="claim your money NOW">claim your
+              money NOW</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="steps d-flex flex-column justify-content-center py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-center">How to get your money back?</h2>
+          </div>
+        </div>
+        <div class="steps row align-items-between justify-content-center px-5">
+          <div class="col-lg-3 col-6 mb-4">
+            <div class="step text-center d-flex flex-column justify-content-between align-items-between">
+              <a class="d-block text-decoration-none p-3 h-100" title="Check a broker"><span class="d-flex justify-content-between align-items-start"><span class="img d-flex justify-content-center align-items-start align-items-md-center"><img width="98" height="98" class="attachment-block-steps_step-image size-block-steps_step-image beetle-lazy" alt="check-hover" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/check-hover-98x98.png' %}"></span>
+                  <span class="number">01</span></span>
+                <h3 class="m-0">Check a broker</h3>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mb-4">
+            <div class="step text-center d-flex flex-column justify-content-between align-items-between">
+              <a class="d-block text-decoration-none p-3 h-100" title="File A Complaint &amp; Open A Case"><span class="d-flex justify-content-between align-items-start"><span class="img d-flex justify-content-center align-items-start align-items-md-center"><img width="98" height="98" class="attachment-block-steps_step-image size-block-steps_step-image beetle-lazy" alt="file-complaint-hover" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/file-complaint-hover-98x98.png' %}"></span>
+                  <span class="number">02</span></span>
+                <h3 class="m-0">File A Complaint & Open A Case</h3>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mb-4">
+            <div class="step text-center d-flex flex-column justify-content-between align-items-between">
+              <a class="d-block text-decoration-none p-3 h-100" title="Fight &amp; Dispute"><span class="d-flex justify-content-between align-items-start"><span class="img d-flex justify-content-center align-items-start align-items-md-center"><img width="98" height="98" class="attachment-block-steps_step-image size-block-steps_step-image beetle-lazy" alt="fight-hover" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/fight-hover-98x98.png' %}"></span>
+                  <span class="number">03</span></span>
+                <h3 class="m-0">Fight & Dispute</h3>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 mb-4">
+            <div class="step text-center d-flex flex-column justify-content-between align-items-between">
+              <a class="d-block text-decoration-none p-3 h-100" title="Get Your Money Back"><span class="d-flex justify-content-between align-items-start"><span class="img d-flex justify-content-center align-items-start align-items-md-center"><img width="98" height="98" class="attachment-block-steps_step-image size-block-steps_step-image beetle-lazy" alt="get-back-hover" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/get-back-hover-98x98.png' %}"></span>
+                  <span class="number">04</span></span>
+                <h3 class="m-0">Get Your Money Back</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info-with-video">
+      <div class="container position-relative d-flex flex-column justify-content-center py-4 py-md-5">
+        <div class="row align-items-center flex-column-reverse flex-md-row">
+          <div class="col-md-6">
+            
+<div id="video-container">
+    <video muted="" id="local-video" poster="{% static 'main/img/assets/uploads/maxresdefault-540x304.jpg' %}">
+        <source src="{% static 'main/img/assets/uploads/Funds-recovery-10-1.mp4' %}" type="video/mp4">
+    </video>
+    <button id="open-modal-button"></button>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="youtube-video" class="youtube-video"></div>
+    </div>
+</div>
+
+<script>
+    // Cache frequently accessed elements
+    const modal = document.getElementById("modal");
+    const video = document.getElementById("youtube-video");
+    const bodyEl = document.querySelector("body");
+    const openModalButton = document.getElementById("open-modal-button");
+    const closeButton = document.getElementsByClassName("close")[0];
+    
+    // Function to open the modal
+    function openModal() {
+        const youtubeIframe = document.createElement("iframe");
+        youtubeIframe.src = "https://www.youtube.com/embed/SIYnM2sLEzo?autoplay=1";
+        youtubeIframe.setAttribute("frameborder", "0");
+        youtubeIframe.setAttribute("allowfullscreen", "true");
+        video.appendChild(youtubeIframe);
+        modal.style.display = "block";
+        bodyEl.style.overflow = "hidden";
+    }
+    
+    // Function to close the modal
+    function closeModal() {
+        video.removeChild(video.firstChild);
+        modal.style.display = "none";
+        bodyEl.style.overflow = "scroll";
+    }
+    
+    // Event listener for the button click
+    openModalButton.addEventListener("click", openModal);
+    
+    // Event listener for the close button in the modal
+    closeButton.addEventListener("click", closeModal);
+    
+    // Event listener for closing the modal when clicking outside the modal content
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            closeModal();
+        }
+    });
+    
+    // Pause YouTube video when closing the modal
+    window.addEventListener("beforeunload", function () {
+        const videoSrc = video.firstChild && video.firstChild.src;
+        if (videoSrc) {
+            video.firstChild.src = videoSrc;
+        }
+    });
+    
+    // Play local video without sound on hover over the "Open Modal" button
+    const localVideo = document.getElementById("local-video");
+    let videoTimestamp = null;
+    
+    openModalButton.addEventListener("mouseover", function () {
+        localVideo.currentTime = videoTimestamp || 0;
+        localVideo.play();
+    });
+    
+    openModalButton.addEventListener("mouseout", function () {
+        videoTimestamp = localVideo.currentTime;
+        localVideo.pause();
+    });
+</script>
+          </div>
+          <div class="col-md-6">
+            <h2>About US</h2>
+            <p>
+              We offer full transparency during the entire process and invite
+              you to look up our registration information or to come meet us
+              in person. The service is very straight forward and delivers
+              results.
+            </p>
+            <p>
+              There are tens of millions of victims every single year
+              throughout the world. We know how to recover your funds and we
+              helped thousands of scam victims from around the world to
+              recover their funds.
+            </p>
+            <p>
+              <strong>No matter how complex your situation is we have a solution
+                for you.</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  <section class="blocks-with-links d-flex flex-column justify-content-center py-2 py-md-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">Who can we help?</h2>
+        </div>
+      </div>
+      <div class="blocks-list row align-items-between justify-content-center">
+        <div class="col-6 col-lg-3 mb-4">
+          <a title="Online Scams" class="block text-decoration-none d-flex flex-column flex-md-row align-items-center h-100 p-3">
+            <div class="img mb-2 mb-md-0 d-flex justify-content-center align-items-center set-border">
+              <img width="38" height="37" class="attachment-block-blocks-with-links_block-image size-block-blocks-with-links_block-image beetle-lazy" alt="online-scams" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/online-scams.png' %}">
+            </div>
+            <h3 class="m-0">Online Scams</h3>
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <a title="Banking Fraud" class="block text-decoration-none d-flex flex-column flex-md-row align-items-center h-100 p-3">
+            <div class="img mb-2 mb-md-0 d-flex justify-content-center align-items-center set-border">
+              <img width="37" height="37" class="attachment-block-blocks-with-links_block-image size-block-blocks-with-links_block-image beetle-lazy" alt="banking" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/banking.png' %}">
+            </div>
+            <h3 class="m-0">Banking Fraud</h3>
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <a title="Credit/Debit Card Scams" class="block text-decoration-none d-flex flex-column flex-md-row align-items-center h-100 p-3">
+            <div class="img mb-2 mb-md-0 d-flex justify-content-center align-items-center set-border">
+                  <img width="34" height="37" class="attachment-block-blocks-with-links_block-image size-block-blocks-with-links_block-image beetle-lazy" alt="credit-card" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/credit-card.png' %}">
+            </div>
+            <h3 class="m-0">Credit/Debit Card Scams</h3>
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <a title="CFD Trading Scams" class="block text-decoration-none d-flex flex-column flex-md-row align-items-center h-100 p-3">
+            <div class="img mb-2 mb-md-0 d-flex justify-content-center align-items-center set-border">
+              <img width="40" height="44" class="attachment-block-blocks-with-links_block-image size-block-blocks-with-links_block-image beetle-lazy" alt="cfd" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/cfd.png' %}">
+            </div>
+            <h3 class="m-0">CFD Trading Scams</h3>
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <a title="Forex scams" class="block text-decoration-none d-flex flex-column flex-md-row align-items-center h-100 p-3">
+            <div class="img mb-2 mb-md-0 d-flex justify-content-center align-items-center set-border">
+              <img width="39" height="35" class="attachment-block-blocks-with-links_block-image size-block-blocks-with-links_block-image beetle-lazy" alt="foxer" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/foxer.png' %}">
+            </div>
+            <h3 class="m-0">Forex scams</h3>
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <a title="Crypto-currencies Scams" class="block text-decoration-none d-flex flex-column flex-md-row align-items-center h-100 p-3">
+            <div class="img mb-2 mb-md-0 d-flex justify-content-center align-items-center set-border">
+              <img width="40" height="36" class="attachment-block-blocks-with-links_block-image size-block-blocks-with-links_block-image beetle-lazy" alt="crypto" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/crypto.png' %}">
+            </div>
+            <h3 class="m-0">Crypto-currencies Scams</h3>
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <a title="Binary Options Scam" class="block text-decoration-none d-flex flex-column flex-md-row align-items-center h-100 p-3">
+            <div class="img mb-2 mb-md-0 d-flex justify-content-center align-items-center set-border">
+              <img width="39" height="35" class="attachment-block-blocks-with-links_block-image size-block-blocks-with-links_block-image beetle-lazy" alt="binary" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/binary.png' %}">
+            </div>
+            <h3 class="m-0">Binary Options Scam</h3>
+          </a>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+          <a title="Online Dating Scams" class="block text-decoration-none d-flex flex-column flex-md-row align-items-center h-100 p-3">
+            <div class="img mb-2 mb-md-0 d-flex justify-content-center align-items-center set-border">
+              <img width="51" height="35" class="attachment-block-blocks-with-links_block-image size-block-blocks-with-links_block-image beetle-lazy" alt="dating" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/dating.png' %}">
+            </div>
+            <h3 class="m-0">Online Dating Scams</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+<script>
+    document.querySelectorAll("option").forEach(opt => {
+    if (opt.value == "") {
+        opt.disabled = true;
+    }
+});
+</script>
+
+<section class="consultation-form position-relative">
+<div class="container position-relative py-5">
+  <div class="for-bg overflow-hidden"></div>
+  <h2 class="text-center">
+    If you were a victim of a scam<br>
+    Get free consultation from our team.
+  </h2>
+  
+
+
+
+
+
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8Mu_xB0O5ZFJu54OeHQ7xXbhAR0vgcEL-ZFFJ-as_MDT2vB-y8LYmC2Ff3AkNGImDwHkpRzZybOxbvApgaYTH04UExjUR4Ha-CF_tt6lcHNpJXNOIGwN7y-ps3NhKXaAeaYnw7p8lknC6o8XnHyYo2M"><input name="ufprt" type="hidden" value="CfDJ8Mu_xB0O5ZFJu54OeHQ7xXbGIpRIyseXr5WUaa7cTm7eSwOGJe0P3t_FTySd_uNJ7WP2NZufs9cl197fpOKc4d47cA9k3DxH2hEwW1W3QqQ2LfI8WM2bpls6cvTxUU7g3DNK-dNeIN2AfPnVIWryAvI"></form>
+
+
+
+
+<div class="umbraco-forms-form-config" style="display: none" data-id="55cb1f42c09b492aaad08c9fcca38a2d" data-serialized-page-button-conditions="{}" data-serialized-fieldset-conditions="{}" data-serialized-field-conditions="{}" data-serialized-fields-not-displayed="{}" data-trigger-conditions-check-on="change" data-form-element-html-id-prefix=""></div>
+
+<script type='application/javascript' src="{% static 'main/js/www.google.com/recaptcha/api9f37.js?render=6LcbENAmAAAAAAp8AV9Sno_D7XTbBya2-9zLEYId' %}" defer='defer'></script><script type='application/javascript' src="{% static 'main/js/App_Plugins/UmbracoForms/Assets/recaptcha.v3.init.min.js' %}" defer='defer'></script><script type='application/javascript' src="{% static 'main/js/App_Plugins/UmbracoForms/Assets/themes/default/umbracoforms.min.js' %}" defer='defer'></script><script type='application/javascript' src="{% static 'main/js/App_Plugins/Our.Umbraco.Forms.IntlTelInput/js/intlTelInput.min.js' %}" defer='defer'></script><script type='application/javascript' src="{% static 'main/js/App_Plugins/Our.Umbraco.Forms.IntlTelInput/js/our.umbraco.forms.intl-tel-input.js' %}" defer='defer'></script><script type='application/javascript' src="{% static 'main/js/App_Plugins/Our.Umbraco.Forms.IntlTelInput/js/validate.phonenumber.js' %}" defer='defer'></script><link rel='stylesheet' href="{% static 'main/js/App_Plugins/Our.Umbraco.Forms.IntlTelInput/css/intlTelInput.min.css' %}"><link rel='stylesheet' href="{% static 'main/js/App_Plugins/Our.Umbraco.Forms.IntlTelInput/css/our.umbraco.forms.intl-tel-input.css' %}">    </div>
+
+
+</section>
+    <section class="blocks-with-info py-5">
+      <div class="container">
+        <h2 class="text-center"><span class="title">Why Choose Us?</span></h2>
+        <div class="row align-items-between justify-content-center">
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="block h-100">
+              <div class="img d-flex justify-content-center align-items-center">
+                <span class="title"><img width="81" height="81" class="attachment-block-blocks-with-info_block-image size-block-blocks-with-info_block-image beetle-lazy" alt="experience" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/experience-81x81.png' %}"></span>
+              </div>
+              <h3><span class="title">Experience</span></h3>
+              <p>
+                <span class="title">You can be rest assured knowing that we have years of
+                  experience dealing with online financial and cyber
+                  fraud.</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="block h-100">
+              <div class="img d-flex justify-content-center align-items-center">
+                <span class="title"><img width="81" height="81" class="attachment-block-blocks-with-info_block-image size-block-blocks-with-info_block-image beetle-lazy" alt="fin-aid" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/fin-aid-81x81.png' %}"></span>
+              </div>
+              <h3><span class="title">Financial Aid</span></h3>
+              <p>
+                <span class="title">We specialize in fraud recovery involving wire transfers,
+                  credit card payments, online accounts and crypto currency
+                  transactions.<br>
+                  We can help you dispute and get a refund for your stolen
+                  money</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="block h-100">
+              <div class="img d-flex justify-content-center align-items-center">
+                <span class="title"><img width="81" height="81" class="attachment-block-blocks-with-info_block-image size-block-blocks-with-info_block-image beetle-lazy" alt="trust" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/trust-81x81.png' %}"></span>
+              </div>
+              <h3><span class="title">Trust</span></h3>
+              <p>
+                <span class="title">We offer full transparency during the entire process and
+                  invite you to look up our registration information or to
+                  come meet us in person. The service is very straight forward
+                  and delivers results.</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3 mb-4">
+            <div class="block h-100">
+              <div class="img d-flex justify-content-center align-items-center">
+                <span class="title"><img width="81" height="81" class="attachment-block-blocks-with-info_block-image size-block-blocks-with-info_block-image beetle-lazy" alt="quick" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/quick-81x81.png' %}"></span>
+              </div>
+              <h3><span class="title">Quick</span></h3>
+              <p>
+                <span class="title">Our recovery process is highly efficient and ultimately helps our clients recover their funds in the most effective way.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center pt-4">
+          <span class="title"><a class="btn btn-circle" href="{% url 'create' %}" title="Free Consultation">Free
+              Consultation</a></span>
+        </div>
+      </div>
+    </section>
+    
+<section id="step5" class="faq pt-2 pb-4 py-md-5">
+  <div class="container pb-4">
+    <div class="question toggle">
+      <div class="click-to-open">
+        <div class="faq-icon"></div>
+        <h4>Who are we?</h4>
+      </div>
+      <div class="faqAnswer">
+        We are “Funds Retrieval” an international company, specializing in the recovery of funds from fraudulent online activities.
+      </div>
+    </div>
+    <div class="question">
+      <div class="click-to-open">
+        <div class="faq-icon"></div>
+        <h4>What we do?</h4>
+      </div>
+      <div class="faqAnswer">
+        We help you investigate, review and dispute the fraudulent transactions. We find the liable entities including financial institutions, in order to claim lost or stolen funds.
+      </div>
+    </div>
+    <div class="question">
+      <div class="click-to-open">
+        <div class="faq-icon"></div>
+        <h4>Why us?</h4>
+      </div>
+      <div class="faqAnswer">
+        We have gained a lot of experience helping innocent victims recover their funds from online scams for several years. It is most likely that we have already assisted many victims that were scammed by the same fraudulent activities as you have been.
+      </div>
+    </div>
+    <div class="question">
+      <div class="click-to-open">
+        <div class="faq-icon"></div>
+        <h4>Is This A Scam?</h4>
+      </div>
+      <div class="faqAnswer">
+        Our company is a fully licensed, compliant fraud recovery service. We conduct all cases with full transparency, our registration number is online.
+      </div>
+    </div>
+    <div class="question">
+      <div class="click-to-open">
+        <div class="faq-icon"></div>
+        <h4>How Long Does The Claim Process Take?</h4>
+      </div>
+      <div class="faqAnswer">
+        The timing depends on the individual case in question, however you should speak with your investigator in order to determine the estimated time frame based on the circumstances of your case.
+      </div>
+    </div>
+    <div class="question">
+      <div class="click-to-open">
+        <div class="faq-icon"></div>
+        <h4>Is There A Time Limit To Submit A Claim?</h4>
+      </div>
+      <div class="faqAnswer">
+        There is no statute of limitation for submitting a claim for recovery of funds, against online fraud.
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="{% static 'main/js/scripts/faq-two.js' %}"></script>
+</main>
+{% endblock %}
+</body>
+<!-- Mirrored from funds-recovery.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 09:13:28 GMT -->
+</html>

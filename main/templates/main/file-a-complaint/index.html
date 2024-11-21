@@ -1,0 +1,209 @@
+﻿{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+{% load static %}
+
+    <main class="file-a-complaint-page">
+      <section class="banner">
+        <div class="container py-5">
+          <h1 class="text-center">File A Complaint</h1>
+        </div>
+      </section>
+      <section class="template-form-content">
+        <div class="container">
+          <div class="row justify-content-center py-3 py-md-5">
+            <div class="col-lg-6 px-md-5 mb-4 mb-md-0">
+              <div class="for-form p-3">
+                <div id="umbraco_form_30dc44562c8249738e1b5abe4623533e" class="umbraco-forms-form fileacomplaintform file-a-complaint umbraco-forms-">
+                  <form action="{% url '' %}" enctype="multipart/form-data" id="form7f0392477ea3457293bb3c06a48b3903" method="post">
+                    {% csrf_token %}
+                    <input data-val="true" data-val-required="The FormId field is required." name="FormId" type="hidden">
+                    <input data-val="true" data-val-required="The FormName field is required." name="FormName" type="hidden" value="File A Complaint Form">
+                    <input data-val="true" data-val-required="The RecordId field is required." name="RecordId" type="hidden" value="00000000-0000-0000-0000-000000000000">
+                    <input name="PreviousClicked" type="hidden" value="">
+                    <input name="Theme" type="hidden" value="">
+                    <input type="hidden" name="FormStep" value="0">
+                    <input type="hidden" name="RecordState" value="Q2ZESjhNdV94QjBPNVpGSnU1NE9lSFE3eFhacEsxYnNoVUNsNjI0cEkwNmZScDQ0WFU4Z0pHM0szMy1JR3U0ZTBWa3hCM21IRlZoWmJld2d5NkdVMnRad0RiMzFlT3d0dUp0YkxURjBPaEhtblQ0ckxYcHdzZ1R6dFNRRkNpbXhhTDZ1eEE=">
+
+                    <div class="umbraco-forms-page" id="acda43d7-655d-4c67-b367-4d191d06458a">
+                      <h4 class="umbraco-forms-caption">Contact Us</h4>
+                      <div class="validation-summary-valid" data-valmsg-summary="true">
+                        <ul>
+                          <li style="display: none"></li>
+                        </ul>
+                      </div>
+                      <fieldset class="umbraco-forms-fieldset" id="65043804-af82-42e6-a6ce-b6de7ecad2f4">
+                        <div class="row-fluid">
+                          <div class="umbraco-forms-container col-md-12">
+                            <div class="umbraco-forms-field name shortanswer mandatory">
+                              <label for="name" class="umbraco-forms-label">
+                                Name
+                                <span class="umbraco-forms-indicator">*</span>
+                              </label>
+
+                              <div class="umbraco-forms-field-wrapper">
+                                {{ form.name }}<br>
+                              </div>
+                            </div>
+                            <div class="umbraco-forms-field email shortanswer mandatory alternating">
+                              <label for="email" class="umbraco-forms-label">
+                                Email
+                                <span class="umbraco-forms-indicator">*</span>
+                              </label>
+
+                              <div class="umbraco-forms-field-wrapper">
+                                {{ form.email }}
+                              </div>
+                            </div>
+                            <div class="umbraco-forms-field tel intltelinput mandatory alternating">
+                              <label for="phone" class="umbraco-forms-label">
+                                Tel
+                                <span class="umbraco-forms-indicator">*</span>
+                              </label>
+
+                              <div class="umbraco-forms-field-wrapper">
+                                {{ form.phone }}
+                                <input type="hidden" name="phone_intl_eaa15271-07fd-4d62-af8a-75ed58231326" id="phone_intl_eaa15271-07fd-4d62-af8a-75ed58231326">
+                              </div>
+                            </div>
+                            <div class="umbraco-forms-field scamcompanyname shortanswer mandatory">
+                              <label for="company" class="umbraco-forms-label">
+                                Scam company name
+                                <span class="umbraco-forms-indicator">*</span>
+                              </label>
+
+                              <div class="umbraco-forms-field-wrapper">
+                                {{ form.company }}
+                    
+                              </div>
+                            </div>
+                            <div class="umbraco-forms-field date mandatory">
+                              <label for="date" class="umbraco-forms-label">
+                                Date
+                                <span class="umbraco-forms-indicator">*</span>
+                              </label>
+
+                              <div class="umbraco-forms-field-wrapper">
+                                <input type="hidden" name="543d288f-e119-496a-a9cd-3b93fa16c5b3" id="543d288f-e119-496a-a9cd-3b93fa16c5b3" class="datepickerfieldshadow" value="" data-umb="543d288f-e119-496a-a9cd-3b93fa16c5b3">
+                                {{ form.date }}
+                              </div>
+                            </div>
+                            <div class="umbraco-forms-field message longanswer mandatory alternating">
+                              <label for="story" class="umbraco-forms-label">
+                                Message
+                                <span class="umbraco-forms-indicator">*</span>
+                              </label>
+
+                              <div class="umbraco-forms-field-wrapper">
+                                {{ form.story }}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <fieldset class="umbraco-forms-fieldset" id="addc279f-fee9-4129-b604-52a2b88ecf59">
+                        <div class="row-fluid">
+                          <div class="umbraco-forms-container col-md-12">
+                            <div class="umbraco-forms-field termsofservice checkbox mandatory">
+                              <span class="umbraco-forms-tooltip help-block">I agree to the T&C and Privacy Policy</span>
+
+                              <div class="umbraco-forms-field-wrapper">
+                                <input type="checkbox" name="19eb7238-1519-4ba6-882a-020336050b40" id="19eb7238-1519-4ba6-882a-020336050b40" value="true" data-umb="19eb7238-1519-4ba6-882a-020336050b40" data-val="true" data-val-requiredcb="Please provide a value for I agree to the T&amp;C and Privacy policy">
+                                <input type="hidden" name="19eb7238-1519-4ba6-882a-020336050b40" value="false">
+                              </div>
+                            </div>
+                            <div
+                              class="umbraco-forms-field recaptcha recaptchav3withscore mandatory alternating"
+                            >
+                              <div class="umbraco-forms-field-wrapper">
+                                <input
+                                  type="hidden"
+                                  id="48955c90-fdff-4b14-b187-6598bab33ff6"
+                                  name="g-recaptcha-response"
+                                />
+                                <div
+                                  class="umbraco-forms-recaptcha-v3-config"
+                                  style="display: none"
+                                  data-id="48955c90-fdff-4b14-b187-6598bab33ff6"
+                                  data-site-key="6LcbENAmAAAAAAp8AV9Sno_D7XTbBya2-9zLEYId"
+                                ></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <fieldset class="umbraco-forms-fieldset" id="177b6022-0a20-4c62-85af-1fd7377a5e32">
+                        <div class="row-fluid">
+                          <div class="umbraco-forms-container col-md-12">
+                            <div class="umbraco-forms-field urlwithquerystring hidden">
+                              <div class="umbraco-forms-field-wrapper">
+                                <input type="hidden" name="ac3e4eac-6634-4d1c-bc74-8a2ff77dfab6" id="ac3e4eac-6634-4d1c-bc74-8a2ff77dfab6" data-umb="ac3e4eac-6634-4d1c-bc74-8a2ff77dfab6" class="hidden" value="{% url '' %}">
+                              </div>
+                            </div>
+                            <div class="umbraco-forms-field userip hidden alternating">
+                              <div class="umbraco-forms-field-wrapper">
+                                <input type="hidden" name="6c7a5e52-6518-453e-9e66-81acba408264" id="6c7a5e52-6518-453e-9e66-81acba408264" data-umb="6c7a5e52-6518-453e-9e66-81acba408264" class="hidden" value="">
+                              </div>
+                            </div>
+                            <div class="umbraco-forms-field useragent hidden">
+                              <div class="umbraco-forms-field-wrapper">
+                                <input type="hidden" name="c4f7412c-9269-4e75-9ca1-05e743210125" id="c4f7412c-9269-4e75-9ca1-05e743210125" data-umb="c4f7412c-9269-4e75-9ca1-05e743210125" class="hidden" value="Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)">
+                              </div>
+                            </div>
+                            <div class="umbraco-forms-field passtheid hidden alternating">
+                              <div class="umbraco-forms-field-wrapper">
+                                <input type="hidden" name="%" id="9121a5e8-28d8-4d9f-be3f-ba91c1e6714c" data-umb="9121a5e8-28d8-4d9f-be3f-ba91c1e6714c" class="hidden" value="">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+
+                      <div style="display: none" aria-hidden="true">
+                        <input type="text" name="30dc44562c8249738e1b5abe4623533e">
+                      </div>
+
+                      <div class="umbraco-forms-navigation row-fluid">
+                        <div class="col-md-12">
+                          <button id="submit" type="submit" class="btn primary" value="Submit" name="submit">Submit</button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+
+                  <div class="umbraco-forms-form-config" style="display: none" data-id="30dc44562c8249738e1b5abe4623533e" data-serialized-page-button-conditions="{}" data-serialized-fieldset-conditions="{}" data-serialized-field-conditions="{}" data-serialized-fields-not-displayed="{}" data-trigger-conditions-check-on="change" data-form-element-html-id-prefix=""></div>
+
+                  <div id="umbraco-forms-date-picker-config" style="display: none" data-name="en-US" data-year-range="10" data-previous-month="<<" data-next-month=">>" data-months="January,February,March,April,May,June,July,August,September,October,November,December," data-weekdays="Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday" data-weekdays-short="Sun,Mon,Tue,Wed,Thu,Fri,Sat"></div>
+                  <script type="application/javascript" src="{% static 'main/js/www.google.com/recaptcha/api9f37.js?render=6LcbENAmAAAAAAp8AV9Sno_D7XTbBya2-9zLEYId' %}" defer="defer"></script>
+                  <script type="application/javascript" src="{% static 'main/js/App_Plugins/UmbracoForms/Assets/recaptcha.v3.init.min.js' %}" defer="defer"></script>
+                  <script type="application/javascript" src="{% static 'main/js/App_Plugins/UmbracoForms/Assets/themes/default/umbracoforms.min.js' %}" defer="defer"></script>
+                  <script type="application/javascript" src="{% static 'main/js/App_Plugins/UmbracoForms/Assets/moment/min/moment-with-locales.min.js' %}" defer="defer"></script>
+                  <script type="application/javascript" src="{% static 'main/js/App_Plugins/UmbracoForms/Assets/pikaday/pikaday.min.js' %}" defer="defer"></script>
+                  <script type="application/javascript" src="{% static 'main/js/App_Plugins/UmbracoForms/Assets/datepicker.init.min.js' %}" defer="defer"></script>
+                  <script type="application/javascript" src="{% static 'main/js/App_Plugins/Our.Umbraco.Forms.IntlTelInput/js/intlTelInput.min.js' %}" defer="defer"></script>
+                  <script type="application/javascript" src="{% static 'main/js/App_Plugins/Our.Umbraco.Forms.IntlTelInput/js/our.umbraco.forms.intl-tel-input.js' %}" defer="defer"></script>
+                  <script type="application/javascript" src="{% static 'main/js/App_Plugins/Our.Umbraco.Forms.IntlTelInput/js/validate.phonenumber.js' %}" defer="defer"></script>
+                  <link rel="stylesheet" href="{% static 'main/js/App_Plugins/UmbracoForms/Assets/pikaday/pikaday.min.css' %}"><link rel="stylesheet" href="{% static 'main/js/App_Plugins/Our.Umbraco.Forms.IntlTelInput/css/intlTelInput.min.css' %}"><link rel="stylesheet" href="{% static 'main/js/App_Plugins/Our.Umbraco.Forms.IntlTelInput/css/our.umbraco.forms.intl-tel-input.css' %}">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 px-md-5">
+              <h2 class="mb-5">
+                Scam Victim?<br>
+                Leave your details to get<br>
+                <span class="color-brand">FREE CONSULTATION</span><br>
+                from our team.
+              </h2>
+              <img width="329" height="329" class="attachment-full size-full beetle-lazy" alt="img1" decoding="async" loading="lazy" src="{% static 'main/img/assets/uploads/img-1.png' %}">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    {% endblock %}
+  </body>
+
+  <!-- Mirrored from funds-recovery.com/file-a-complaint/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 09:13:29 GMT -->
+</html>

@@ -1,0 +1,53 @@
+﻿{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<main class="about-us-page">
+    <section class="banner">
+      <div class="container py-5">
+        <h1 class="text-center">About Us</h1>
+      </div>
+    </section>
+    <div class="container py-5">
+      <p>
+        <span style="font-weight: 400">Funds Retrieval is a consulting firm that specializes in the
+          retrieval of assets lost to online and offline financial
+          fraud.</span>
+      </p>
+      <p>
+        <span style="font-weight: 400">We are uniquely qualified in working with cases of scams dealing
+          with forex trading, contract
+          for difference troubles (CFDs),
+          binary options
+          frauds, and cryptocurrency issues.</span>
+      </p>
+      <p>
+        <span style="font-weight: 400">Unfortunately, the general public is not aware of how massive and
+          prevalent the world of scams has become. We are sad to report that
+          tens of millions of people lose their money to fraud every year. If
+          you or your loved ones have had the misfortune of falling prey to
+          financial fraud, there is a course of action you can take.</span>
+      </p>
+      <p>
+        <span style="font-weight: 400">Don’t hesitate to contact us. The ‘Funds Recovery” team is on a
+          mission to remedy your financial injury. We have vast experience in
+          dealing with troubling cases of all types of scams and chances are
+          we already have the know-how to help your specific financial
+          problem.</span>
+      </p>
+      <p>
+        <span style="font-weight: 400">Take matters into your own hands and make the first step towards
+          retrieving your funds.</span>
+      </p>
+      <p>
+        <a href="{% url 'contacts' %}"><span style="font-weight: 400">Contact us now.</span></a>
+      </p>
+    </div>
+</main>
+{% endblock %}
+</body>
+<!-- Mirrored from funds-recovery.com/about-us/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 02 Sep 2023 09:13:28 GMT -->
+</html>

@@ -1,0 +1,567 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 15 version
+*/
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.free-consultation * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.umbraco-forms-fieldset {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.free-consultation .umbraco-forms-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.free-consultation .umbraco-forms-container > * {
+  margin: 0.3rem;
+}
+
+.free-consultation .country {
+  max-width: 180px;
+}
+
+.free-consultation .amountlost {
+  min-width: 190px;
+}
+
+@media (max-width: 460px) {
+  .free-consultation .umbraco-forms-container > * {
+    width: 100%;
+  }
+
+  .free-consultation input {
+    max-width: 100%;
+    width: 100% !important;
+  }
+
+  .free-consultation form input,
+  .free-consultation form select,
+  .free-consultation form textarea {
+    max-width: 100%;
+    width: 100% !important;
+  }
+
+  .free-consultation .country {
+    max-width: 100%;
+  }
+  
+}
+
+.free-consultation label {
+  display: none;
+}
+
+.free-consultation .umbraco-forms-navigation > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.free-consultation .umbraco-forms-field-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.free-consultation .umbraco-forms-fieldset > div {
+  width: 100%;
+}
+
+.free-consultation .termsofservice {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.free-consultation h2 {
+  padding: 0 1rem;
+}
+
+.umbraco-forms-tooltip {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.free-consultation > div {
+  padding: 1rem 0;
+}
+
+.file-a-complaint fieldset > div {
+  width: 100%;
+}
+
+.for-form {
+  -webkit-box-shadow: 0 0 40px rgba(1, 23, 45, 0.1);
+  box-shadow: 0 0 40px rgba(1, 23, 45, 0.1);
+}
+
+.file-a-complaint label,
+.file-a-complaint h4 {
+  display: none;
+}
+
+.file-a-complaint .umbraco-forms-container > * {
+  margin: 1rem 0;
+}
+
+.file-a-complaint .btn {
+  background: #f55340;
+  color: #fff;
+  border-radius: 35px;
+  padding: 1rem 1.75rem;
+}
+
+.file-a-complaint input,
+.file-a-complaint textarea,
+.file-a-complaint select {
+  border: 1px solid #f6f6f6;
+  background-color: #f6f6f6;
+  font-family: "Titillium Web", sans-serif !important;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  padding: 0.75rem;
+  min-height: 49px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.file-a-complaint input::-webkit-input-placeholder {
+  color: #01172d;
+  opacity: 1;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.file-a-complaint input::-moz-placeholder {
+  color: #01172d;
+  opacity: 1;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.file-a-complaint input:-ms-input-placeholder {
+  color: #01172d;
+  opacity: 1;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.file-a-complaint input::-ms-input-placeholder {
+  color: #01172d;
+  opacity: 1;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.file-a-complaint input::placeholder {
+  color: #01172d;
+  opacity: 1;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.file-a-complaint .umbraco-forms-page .umbraco-forms-fieldset {
+  padding-bottom: 0;
+}
+
+.file-a-complaint .message {
+  margin-bottom: 0;
+}
+
+.contact-form fieldset > div {
+  width: 100%;
+}
+
+.contact-form label,
+.contact-form h4 {
+  display: none;
+}
+
+.contact-form .umbraco-forms-container > * {
+  margin: 0.4rem 0;
+}
+
+.contact-form .btn {
+  background: #f55340;
+  color: #fff;
+  border-radius: 35px;
+  padding: 1rem 1.75rem;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  border: 1px solid #f6f6f6;
+  background-color: #f6f6f6;
+  font-family: "Titillium Web", sans-serif !important;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  padding: 0.75rem;
+  min-height: 49px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input::-webkit-input-placeholder {
+  color: #01172d;
+  opacity: 1;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contact-form input::-moz-placeholder {
+  color: #01172d;
+  opacity: 1;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contact-form input:-ms-input-placeholder {
+  color: #01172d;
+  opacity: 1;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contact-form input::-ms-input-placeholder {
+  color: #01172d;
+  opacity: 1;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  -ms-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.contact-form input::placeholder {
+  color: #01172d;
+  opacity: 1;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.termsofservice label {
+  display: block;
+  text-align: center;
+}
+
+.testcommet fieldset > div {
+  width: 100%;
+}
+
+#beetle-theme-contact-form-2 .free-consultation .umbraco-forms-container > * {
+  min-width: 100%;
+}
+
+.landing-page .template-form-content {
+  background: #fff;
+  margin-bottom: 2rem;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.landing-page .title_form span {
+  color: #f55340;
+}
+
+.landing-page .title_form {
+  color: #000;
+  margin-left: 1rem;
+}
+
+.landing-page .umbraco-forms-page {
+  width: 100%;
+}
+
+.file-a-complaint-landing h4 {
+  display: none;
+}
+
+.file-a-complaint-landing .umbraco-forms-tooltip {
+  color: black;
+}
+
+.file-a-complaint-landing input,
+.file-a-complaint-landing select,
+.file-a-complaint-landing textarea {
+  background: #ededed;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.file-a-complaint-landing .btn.primary {
+  background: #36c997 !important;
+  border: 1px solid #36c997 !important;
+}
+
+.landing-page .for-form {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.leave-a-comment fieldset > div {
+  width: 100%;
+}
+
+.leave-a-comment .umbraco-forms-container > div:last-child {
+  margin-bottom: 1rem;
+}
+
+.leave-a-comment label,
+.file-a-complaint-landing label {
+  display: none;
+}
+
+.leave-a-comment .umbraco-forms-field,
+.file-a-complaint-landing .umbraco-forms-field {
+  margin: 0.5rem 0;
+}
+
+.file-a-complaint-landing .umbraco-forms-container {
+  width: 100%;
+}
+
+.file-a-complaint-landing .umbraco-forms-field {
+  width: 100%;
+}
+
+.file-a-complaint-landing fieldset > div {
+  width: 100%;
+}
+
+.file-a-complaint-landing .title_form {
+  margin-left: 2rem;
+}
+
+@media (min-width: 575px) {
+  .leave-a-comment .umbraco-forms-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .leave-a-comment .umbraco-forms-container > * {
+    width: 49%;
+  }
+
+  .leave-a-comment .umbraco-forms-container > div:last-child,
+  .file-a-complaint-landing .umbraco-forms-container > div:last-child {
+    width: 100% !important;
+  }
+
+  .contact-form .umbraco-forms-container,
+  .file-a-complaint-landing .umbraco-forms-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .contact-form .umbraco-forms-container > *,
+  .file-a-complaint-landing .umbraco-forms-container > * {
+    width: 49%;
+  }
+
+  .contact-form .umbraco-forms-container > div:last-child {
+    width: 100% !important;
+  }
+
+  .contact-form .country {
+    width: 100% !important;
+  }
+}
+
+.leave-a-comment .free-consultation fieldset,
+.leave-a-comment .free-consultation .umbraco-forms-container {
+  padding: 0;
+  margin: 0;
+}
+
+.leave-a-comment fieldset,
+.leave-a-comment .umbraco-forms-container {
+  padding: 0;
+  margin: 0;
+}
+
+.umbraco-forms-submitmessage-html p {
+  color: white;
+  font-size: 2em;
+  font-family: inherit;
+  font-weight: 600;
+  text-align: center;
+}
+
+.blacklist-item .free-consultation .umbraco-forms-container {
+  padding: 0;
+}
+
+.blacklist-item .termsofservice .help-block {
+  margin-left: 1rem;
+}
+
+.termsofservice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100% !important;
+}
+
+.termsofservice > div:nth-child(2) {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-right: 0.4rem;
+}
+
+.recaptcha {
+  display: none;
+}
+
+[id="c536ac01-22be-4c6a-cad9-2844fc98a6fa"] {
+  display: none;
+}
+
+.umbraco-forms-container {
+  padding: 0;
+}
+
+.leave-a-comment .commentbody {
+  width: 100%;
+}
+
+.iti__flag-box,
+.iti__country-name,
+.iti__dial-code {
+  color: black !important;
+}
+
+.iti--allow-dropdown .iti__flag-container,
+.iti--separate-dial-code .iti__flag-container {
+  left: 12px !important;
+}
+
+.iti--allow-dropdown input,
+.iti--allow-dropdown input[type="tel"],
+.iti--allow-dropdown input[type="text"],
+.iti--separate-dial-code input,
+.iti--separate-dial-code input[type="tel"],
+.iti--separate-dial-code input[type="text"] {
+  padding-left: 64px !important;
+}
+
+.validation-summary-errors {
+  display: none;
+}
+
+.iti__selected-flag {
+  padding: 0 6px 0 15px !important;
+  margin-left: -13px !important;
+}
+
+input[type="checkbox"] {
+  cursor: pointer !important;
+}
+
+.umbraco-forms-field.hidden {
+  display: none;
+}
+
+.input-validation-error {
+  border: 3px solid red !important;
+  box-sizing: border-box !important;
+}
