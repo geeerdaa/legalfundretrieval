@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
-from .forms import UserForm
-
+from .forms import PersoneForm, ContactsForm
 
 
 def index(request):
@@ -18,19 +17,16 @@ def about(request):
 
 
 def contacts(request):
-    data = {
-        'title': 'Contacts Us',
-    }
     error = ''
     if request.method == 'POST':
-        form = UserForm(request.POST)
+        form = ContactsForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('')
         else:
             error = 'Error'
-
-    form = UserForm()
+    
+    form = ContactsForm()
 
     data = {
         'form': form,
@@ -42,14 +38,14 @@ def contacts(request):
 def create(request):
     error = ''
     if request.method == 'POST':
-        form = UserForm(request.POST)
+        form = PersoneForm(request.POST)
         if form.is_valid():
             form.save()
             return redirect('')
         else:
             error = 'Error'
 
-    form = UserForm()
+    form = PersoneForm()
 
     data = {
         'form': form,

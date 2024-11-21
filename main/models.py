@@ -1,10 +1,10 @@
 from django.db import models
 
 
-class User(models.Model):
+class Persone(models.Model):
     name = models.CharField('Your name', max_length=50)
     email = models.EmailField('Email address')
-    phone = models.PositiveIntegerField('Your Phone')
+    phone = models.CharField('Your Phone', max_length=52)
     company = models.CharField('Scam company name', max_length=50)
     date = models.DateField('Last transaction date', max_length=50)
     story = models.TextField('Tell your story')
@@ -13,8 +13,25 @@ class User(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return f'/index.html/{self.id}'
+        return f'/index.html/'
 
     class Meta:
-        verbose_name = 'User'
-        verbose_name_plural = 'Users'
+        verbose_name = 'Persone'
+        verbose_name_plural = 'Personens'
+
+
+class Contacts(models.Model):
+    name = models.CharField('Your name', max_length=50)
+    email = models.EmailField('Email address')
+    phone = models.CharField('Your Phone', max_length=52)
+    story = models.TextField('Tell your story')
+
+    def __str__(self):
+        return self.name
+
+    def get_absolute_url(self):
+        return f'/index.html/'
+
+    class Meta:
+        verbose_name = 'Contact'
+        verbose_name_plural = 'Contacts'
