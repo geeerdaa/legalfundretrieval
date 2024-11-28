@@ -54,3 +54,8 @@ def create(request):
     }
 
     return render(request, 'main/file-a-complaint/index.html', data)
+
+
+def get_exсeption(request):
+    error = 1/0
+    return render(request, 'main/file-a-complaint/index.html', data)
