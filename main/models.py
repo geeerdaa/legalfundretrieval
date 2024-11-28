@@ -4,9 +4,9 @@ from django.db import models
 class Persone(models.Model):
     name = models.CharField('Your name', max_length=50)
     email = models.EmailField('Email address')
-    phone = models.CharField('Your Phone', max_length=52)
+    phone = models.CharField('Your Phone', max_length=20)
     company = models.CharField('Scam company name', max_length=50)
-    date = models.DateField('Last transaction date', max_length=50)
+    date = models.CharField('Last transaction date', max_length=10)
     story = models.TextField('Tell your story')
 
     def __str__(self):

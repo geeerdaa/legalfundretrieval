@@ -1,7 +1,6 @@
 from django.shortcuts import render, redirect
 from .forms import PersoneForm, ContactsForm
 
-
 def index(request):
     data = {
         'title': 'Home',
@@ -24,7 +23,7 @@ def contacts(request):
             form.save()
             return redirect('')
         else:
-            error = 'Error'
+            error = form.errors
     
     form = ContactsForm()
 
@@ -44,7 +43,7 @@ def create(request):
             form.save()
             return redirect('')
         else:
-            error = 'Error'
+            error = form.errors
 
     form = PersoneForm()
 

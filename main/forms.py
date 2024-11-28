@@ -1,5 +1,5 @@
 from .models import Persone, Contacts
-from django.forms import ModelForm, TextInput, Textarea, DateTimeInput, EmailInput
+from django.forms import ModelForm, TextInput, Textarea, DateTimeInput, EmailInput, NumberInput
 
 class PersoneForm(ModelForm):
     class Meta:
@@ -16,7 +16,10 @@ class PersoneForm(ModelForm):
                 'placeholder': 'Email address',
             }),
             "phone": TextInput(attrs={
+                'type': 'tel',
                 'class': 'form-control',
+                'pattern': '[+0-9]*',  # Разрешить только цифры
+                'inputmode': 'numeric',  # Показывать числовую клавиатуру на мобильных устройствах
                 'placeholder': 'Your Phone',
             }),
             "company": TextInput(attrs={
@@ -25,6 +28,8 @@ class PersoneForm(ModelForm):
             }),
             "date": DateTimeInput(attrs={
                 'class': 'form-control',
+                'pattern': '[.0-9]*',  # Разрешить только цифры
+                'inputmode': 'numeric',  # Показывать числовую клавиатуру на мобильных устройствах
                 'placeholder': 'Last transaction date',
             }),
             "story": Textarea(attrs={
@@ -49,7 +54,10 @@ class ContactsForm(ModelForm):
                 'placeholder': 'Email address',
             }),
             "phone": TextInput(attrs={
+                'type': 'tel',
                 'class': 'form-control',
+                'pattern': '[+0-9]*',  # Разрешить только цифры
+                'inputmode': 'numeric',  # Показывать числовую клавиатуру на мобильных устройствах
                 'placeholder': 'Your Phone',
             }),
             "story": Textarea(attrs={
